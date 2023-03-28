@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Popup</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="content-container">
+        <h1 class="h1">Welcome To The Real World </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          architecto minima unde minus laborum expedita eum inventore pariatur
+          ab iste, hic voluptates enim odit reprehenderit aliquid est aut!
+          Inventore, quaerat?
+        </p>
+        <button class="cta-btn" id="open">Open BookList </button>
+      </div>
+    </header>
+    <!-- Form  -->
+    <section class="modal-container" id="modal">
+      <section class="modal">
+        <button class="close-btn" id="close">x</button>
+        <div class="modal-content">
+          <h2>BookList</h2>
+          <hr>
+          <section class="container">
+            <form id="book-form">
+              <div>
+                <label for="title">Book Title</label>
+                <input type="text" id="title" />
+              </div>
+              <div>
+                <label for="author">Book Author</label>
+                <input type="text" id="author" />
+              </div>
+              <div>
+                <label for="year">Published Year</label>
+                <input type="number" id="year" />
+              </div>
+              <button type="submit" class="btn" id="btnn">Add Book</button>
+            </form>
+      
+            <section class="table">
+              <section class="table-section">
+                <div class="div1">Title</div>
+                <div class="div2">Author</div>
+                <div class="div3">Year</div>
+              </section>
+      
+              <section id="book-list"></section>
+
+            </section>
+         
+
+          </section>
+         
+        </div>
+      </section>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

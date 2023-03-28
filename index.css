@@ -1,0 +1,186 @@
+:root {
+    --modal-duration: 1s;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  header {
+   background-image: url(./headphones.jpg);
+    background-size: calc(1600px);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content-container h1 {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  .content-container p {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    line-height: 24px;
+  }
+  
+  .cta-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-color: crimson;
+    box-shadow: 0px 10px 100px  red;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+  
+  .modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 700px;
+  }
+  
+  .modal-content {
+    padding: 20px;
+ 
+  }
+  
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 6px;
+   
+  }
+  
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  
+  .container {
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+  
+  input {
+    width: 600px;
+    padding: 10px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    background-color: wheat;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  label{
+    color: black;
+  }
+  
+  .table {
+    background: black;
+    width: 37rem;
+    border-radius: 10px;
+    
+  }
+  
+  .table-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #book-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    word-wrap: break-word;
+    background: blue;
+    color: white;
+  }
+  
+  #book-list  section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .btn{
+    position: relative;
+    width: 200px;
+    left: 190px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    
+  }
+ 
+  /* JavaScript */
+  .modal-container.show-modal {
+    display: block;
+  }
+ 
+
+
+  
